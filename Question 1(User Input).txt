@@ -1,0 +1,46 @@
+#Question 2 in Python
+
+def isSlotAvaialble(AL, SD, ED):
+	a = SD
+	b = ED
+	a1 = int(a[6:])
+	b1 = int(b[6:])
+	a2 = int(a[3:5])
+	b2 = int(b[3:5])
+	a3 = int(a[:2])
+	b3 = int(b[:2])
+	
+	for i in range(len(AL)):
+		f = AL[i]
+		d = f[1]
+		e = f[2]
+		d1 = int(d[6:])
+		e1 = int(e[6:])
+		d2 = int(d[3:5])
+		e2 = int(e[3:5])
+		d3 = int(d[:2])
+		e3 = int(e[:2])
+		
+		if a1 == d1:
+			if a2 == d2:
+				
+
+	if c == len(AL):
+		return 'true' 
+	else:
+		return 'false'
+
+approvedLeaves = [
+[1, '14-12-2020', '18-12-2020'],
+[3, '22-12-2020', '24-12-2020'],
+[7, '27-12-2020', '30-12-2020'],
+[29, '02-12-2020', '10-12-2020'],
+[45, '24-02-2021', '17-03-2021']
+]
+
+
+startDate = input('Start date:')
+endDate = input('End date:')
+
+
+print(isSlotAvaialble((approvedLeaves, startDate, endDate))
